@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const UserInfoCard = ({userInfo}) => {
   const {name, username, email, id} = userInfo
   return(
-    <div className="group w-[calc(100%/5-20px)] m-[10px] py-5 px-14 text-center shadow-md border border-slate-300 rounded-md hover:bg-slate-800 hover:text-white transition-all hover:transition-all">
+    <div className="group w-full md:w-[calc(100%/3-20px)] xl:w-[calc(100%/5-20px)] m-[10px] py-5 px-14 text-center shadow-md border border-slate-300 rounded-md hover:bg-slate-800 hover:text-white transition-all hover:transition-all">
       <div className="h-full">
         <div className="h-[100px] w-[100px] mx-auto rounded-full bg-slate-300 flex justify-center items-center text-2xl group-hover:text-black">{name.charAt(0)}</div>
         <h2 className="mt-2 text-lg">{name}</h2>
